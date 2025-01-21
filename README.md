@@ -28,27 +28,15 @@ Our User Story - As a lover of word-related games, I want to play a word scrambl
     **Timer**: Solve each word within a time limit. Time is subtracted within each difficulty level. 
 
 ## How to Play
-Sign in username and pick challenge level.
+Pick challenge level and click "Play Game".  User then has 60 seconds to correctly identify the word.  
 
 
+## Installation - N/A
 
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-#
 ## Usage
 
 # Support
-Contact: Matt Mullenn (@MMullen4), Maggie Ellinwood (@mellinwood1023), Raven Hunter(@rhunter27), and Ruben Alston (@raabaja718) for any questions, concerns, or let us know how you're enjoying our game!
-
+Contact: Matt Mullen (@MMullen4), Maggie Ellinwood (@mellinwood1023), Raven Hunter(@rhunter27), and Ruben Alston (@raabaja718) for any questions, concerns, or let us know how you're enjoying our game!
 
 
 # Contributions
@@ -66,15 +54,3 @@ Matt Mullenn (@MMullen4), Maggie Ellinwood (@mellinwood1023), Raven Hunter(@rhun
 ## Project
 
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
