@@ -33,21 +33,8 @@ Sign in username and pick challenge level.
 
 ## Visuals 
 ![Game Screenshot](./assets/Screenshot 2025-01-18 at 8.07.36 PM.png)
+![Game Screenshot](./assets/Screenshot 2025-01-18 at 8.08.15 PM.png)
 
-
-# Foobar
-
-Foobar is a Python library for dealing with word pluralization.
-
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
-#
-## Usage
 
 # Support
 Contact: Matt Mullenn (@MMullen4), Maggie Ellinwood (@mellinwood1023), Raven Hunter(@rhunter27), and Ruben Alston (@raabaja718) for any questions, concerns, or let us know how you're enjoying our game!
@@ -68,16 +55,6 @@ Matt Mullenn (@MMullen4), Maggie Ellinwood (@mellinwood1023), Raven Hunter(@rhun
 
 ## Project
 
+https://github.com/MMullen4/Word_Scramble/pulls
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+(added comments) https://mmullen4.github.io/Word_Scramble/index.html
