@@ -1,3 +1,17 @@
+const backBtnEl = document.querySelector('#back');
+
+// Add error handling and prevent default behavior
+backBtnEl?.addEventListener('click', (event) => {
+  event.preventDefault();
+  try {
+    redirectPage('index.html');
+  } catch (error) {
+    console.error('Navigation error:', error);
+    // Fallback navigation if redirectPage fails
+    window.location.href = 'index.html';
+  }
+});
+
 const word = [
     "Ability",
     "College",
@@ -42,8 +56,6 @@ function shuffle(str) {
 
 const timerEl = document.getElementById('countdown');
 const mainEl = document.getElementById('main');
-const wins = document.querySelector('.win');
-const lose = document.querySelector('.lose');
 
 let timeInterval;
 let timeLeft = 60;
@@ -71,13 +83,6 @@ function startTimer() {
 }
 startTimer();
 
-
-
-//function countdown() {
-//  }
-//countdown(); 
-
-
 function refresh() { 
     index = Math.floor(Math.random() * 10); 
     displayWord = word[index].toLocaleLowerCase(); 
@@ -85,7 +90,7 @@ function refresh() {
     scrambleWord = document.getElementById("word"); 
     console.log(displayWord)
     scrambleWord.innerText = shuffle(displayWord).toUpperCase(); 
-
+  
      // Reset the hint button text
      const userHint = document.getElementById("hint");
      userHint.innerText = "Hint";
@@ -97,10 +102,13 @@ function checkGuess() {
     if (userGuess === displayWord) {
         result.textContent= `Correct!`;
         result.style.backgroundColor = "green";
+      guessField.value = '';
+    alert(`You got it! The word was '${displayWord.toUpperCase()}'`)      
         console.log('Correct!');
         startTimer();
         refresh();
       } else {
+        guessField.value = '';
         result.textContent = `Try again`;
         result.style.backgroundColor = "red";
         console.log('Try again');
@@ -116,3 +124,4 @@ function checkHint() {
 }
 
 document.getElementById("hint").addEventListener("click", checkHint);
+      
